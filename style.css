@@ -1,0 +1,361 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #3c96ed;
+    text-decoration: none;
+}
+
+body {
+    background: #fafafa;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+#wrapper {
+    height: 100vh;
+}
+
+#container {
+    margin: 0 auto;
+    min-height: 100%;
+    width: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex-grow: 1;
+    width: 50%;
+}
+
+.left {
+    background-image: url("images/celulares\ do\ meowspace.png");
+    background-size: 450px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 750px;
+    margin-bottom: 50px;
+}
+
+.right {
+    padding-left: 20px;
+}
+
+.login-panel {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.logo-img {
+    width: 175px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="password"], input[type="text"]{
+    background-color: #ffffff;
+    border: 1px solid rgb(236, 234, 234);
+    height: 40px;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 13px;
+    width: 320px;
+    color: #000000;
+}
+
+input[type="password"]::placeholder, input[type="text"]::placeholder{
+    color: rgb(165, 164, 164);
+}
+
+input[type="password"]:focus, input[type="text"]:focus{
+    outline: 0;
+    border: 1px solid #a1a1a1;
+}
+
+input[type="submit"]{
+    width: 320px;
+    margin-top: 10px;
+    height: 30px;
+    border: 0;
+    background-color: #3c96ed;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.infobox{
+    background-color: #fff;
+    height: 60px;
+    border: 1px solid rgb(236, 234, 234);
+    margin: 10px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infobox p{
+    user-select: none;
+}
+
+.infobox p a {
+    font-weight: bold;
+    user-select: none;
+}
+
+.get-app-panel{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.app-buttons{
+    margin-top: 16px;
+}
+
+.app-buttons img{
+    height: 50px;
+    padding: 0 1px;
+}
+
+/* footer{
+    text-align: center;
+    height: 50px;
+    margin-top: -50px;
+
+    }
+
+footer a{
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+.text-small{
+    font-size: 12px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    padding-left: 20px;
+    display: inline-block;
+} */
+
+footer {
+    font-size: 12px; /* Diminui o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-top: 20px; /* Adiciona margem superior para espaçamento */
+}
+
+.footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Espaçamento entre os links */
+}
+
+.footer-inner a {
+    margin: 5px; /* Adiciona margem ao redor dos links */
+}
+
+
+/* PÁGINA SIGNUP */
+#container-signup{
+    margin: 0 auto;
+    min-height: 100%;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.message{
+    margin: 10px 70px;
+    text-align: center;
+}
+
+.message span{
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #8e8e8e;
+}
+
+.cta-button{
+    width: 320px;
+    margin: 10px 0;
+    height: 35px;
+    background-color: #0095f6;
+    color: #ffffff;
+    border: 0;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0081d6;
+}
+
+.cta-button:disabled {
+    background-color: #b2dffc;
+    cursor: not-allowed;
+}
+
+.divisor-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.line{
+    height: 1px;
+    background-color: #e6e6e6;
+    width: 139px;
+}
+
+.divisor-tag{
+    font-weight: bold;
+    margin: 0 2.5%;
+    color: #8e8e8e;
+    user-select: none;
+
+}
+
+
+
+    /* FIM PÁGINA SIGNUP */
+    /* INÍCIO RESPONSIVIDADE */
+
+@media (max-width: 850px){
+    .left{
+        display: none;
+    }
+
+    #container{
+        width: 85%;
+}
+
+    .right{
+        padding-left: 0;
+ }
+}
+
+
+@media (max-width: 340px) {
+    #container{
+        width: 90%;
+    }
+
+    #container-sgnup{
+        width: 90px;
+    }
+
+    input[type="password"], input[type="text"], input[type="submit"]{
+        width: 85%;
+    }
+
+    .cta-button{
+        width: 85%;
+    }
+
+    .message{
+        margin: 10px 25px;
+    }
+
+    .app-buttons img{
+        height: 50px;
+        padding: 0 1px;
+        margin-top: -20px;
+    }
+}
+
+/* Estilos para mensagens de sucesso */
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Melhorias nos estilos de erro */
+.error-message {
+    color: #ed4956;
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: left;
+    animation: shake 0.5s ease-in-out;
+    width: 320px;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    75% { transform: translateX(5px); }
+}
+
+input.error {
+    border-color: #ed4956;
+    animation: borderPulse 1s ease-in-out;
+}
+
+@keyframes borderPulse {
+    0% { border-color: #ed4956; }
+    50% { border-color: #ff6b6b; }
+    100% { border-color: #ed4956; }
+}
+
+/* Estilo para o botão de submit quando desabilitado */
+input[type="submit"]:disabled {
+    background-color: #b2dffc;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Efeito de transição suave para os inputs */
+input {
+    width: 320px;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    background-color: #fafafa;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #a8a8a8;
+    outline: none;
+}
+
