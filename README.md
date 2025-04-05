@@ -108,13 +108,9 @@ git clone https://github.com/salomaonogueira/meowspace.git
 
 Contribuições são sempre bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
 ---
 
 <div align="center">
-  <p>Desenvolvido com ❤️ por [Salomão David]</p>
+  <p>Desenvolvido com ❤️ por Salomão David</p>
   <p>Contato: salomao3893@gmail.com</p>
 </div>
